@@ -1,0 +1,4 @@
+# core worker deps
+beanstalkc==0.4.0
+
+# Add your django app as an installable here
