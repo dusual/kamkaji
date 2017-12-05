@@ -2,7 +2,7 @@ from setuptools import setup
 
 
 setup(
-    name='jobs_manager',
+    name='kamkaji',
     version='0.1',
     description='django task queue using beanstalkd'
     long_description=open('Readme.md').read(),

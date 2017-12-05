@@ -5,6 +5,9 @@ We at e2enetworks manage multiple services and manage infrastructures across mul
 
 ### Installation
 
+```
+pip install -e git+https://github.com/E2ENetworksPrivateLimited/kamkaji.git#egg=kamkaji
+```
 
 
 
@@ -12,11 +15,18 @@ We at e2enetworks manage multiple services and manage infrastructures across mul
 
 #### Running the worker
 
+```
+python worker/worker.py <host> <port> <log_file> <job_log_dir> <queue>
+```
+Example:
+
+```
+python worker/worker.py  localhost 11300 /var/log/worker/worker_web.log /var/log/worker/ web
+```
+
 #### Adding jobs to the client
 
-
-
-#### Reporting Backend
+Add jobs in jobs directory in the root of the folder of your django project
 
 
 
