@@ -9,6 +9,30 @@ We at e2enetworks manage multiple services and manage infrastructures across mul
 pip install -e git+https://github.com/E2ENetworksPrivateLimited/kamkaji.git#egg=kamkaji
 ```
 
+#### Required Settings
+
+- Beanstalk related:
+
+```
+BEANSTALK_HOST = "localhost"
+BEANSTALK_PORT = 11300
+```
+
+- Job Command:
+
+The backend command that will run on worker. This is essentially a django management command called run_job. You can configure this for your application.
+
+```
+JOB_BACKEND_COMMAND_FORMAT = "python manage.py run_job {job_name} --settings=<local settings>"
+```
+
+- Jobs Directory
+
+Directory to look up jobs
+
+```
+JOBS_DIR = os.path.join(BASE_DIR_KEY, "jobs")
+```
 
 
 ### Usage
@@ -27,7 +51,6 @@ python worker/worker.py  localhost 11300 /var/log/worker/worker_web.log /var/log
 #### Adding jobs to the client
 
 Add jobs in jobs directory in the root of the folder of your django project
-
 
 
 ### Contributors
