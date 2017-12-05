@@ -32,8 +32,8 @@ Add jobs in jobs directory in the root of the folder of your django project
 
 ### Contributors
 
-- Ashish Mukherjee
-- Amit Sethi [@dusual](https://github.com/dusual)
+- [Ashish Mukherjee](https://github.com/ashish-m-yh)
+- [Amit Sethi](https://github.com/dusual)
 
 
 ### TODO and future:
